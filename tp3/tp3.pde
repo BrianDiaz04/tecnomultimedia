@@ -1,6 +1,6 @@
 /*Go mee go Brian Diaz 91306/8 com3
 */
-PImage Fondo, Inicio;
+PImage Fondo, Inicio, Oveja;
 int pantalla = 0, tam1 = 40, tam2 = 40;
 float Y, X, K;
 void setup (){
@@ -12,6 +12,7 @@ background(255);
 pantalla=0;
 Fondo = loadImage("px.png");
 Inicio = loadImage("Inicio.jpg");
+Oveja = loadImage("imm.png");
 }
 
 void draw(){
@@ -25,10 +26,16 @@ void draw(){
  text("Inicio, pulsa espacio para jugar", 30,400);
 }else if (pantalla==1){
   background(Fondo);
+  noStroke();
+  fill(0,0,0,0);
   rect(X,Y,tam1,tam2);
+   Oveja.resize(40,50);
+  image(Oveja,X,Y);
+  fill(0,20,200);
   rect(K,130,90,35);
   rect(K,250, 90, 35);
   rect(K,370, 90, 35);
+  fill(255);
   if (K>=0){
    K+=5; 
   }if(K> width){
