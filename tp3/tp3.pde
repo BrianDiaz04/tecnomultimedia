@@ -1,4 +1,5 @@
 /*Go mee go Brian Diaz 91306/8 com3
+https://youtu.be/hxUmJLwGdL8
 */
 PImage Fondo, Inicio, Oveja;
 int pantalla = 0, tam1 = 40, tam2 = 40;
