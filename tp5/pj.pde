@@ -13,7 +13,8 @@ class Metapod {
   void dibu() {
     push();
     imageMode(CENTER);
-    image(img, pox, poy);
+    image(img, pox, poy-25);
+    fill(0,0,0,0);
     ellipse(pox, poy, radio, radio);
     pop();
   }
@@ -42,11 +43,10 @@ class Metapod {
     if (pox<=0) {
       pox=0;
     }
-    if (poy<= 20 && pox>=450) {
+  }
+  void ganar(){
+    if (poy<= 30 && pox>=400) {
       estado = 2;
     }
-    if(dist(myMetapod.pox,myMetapod.poy,pkballs[19].posx,pkballs[19].posy)<5){
-     estado=3;
-}
   }
 }
