@@ -1,4 +1,5 @@
 //Brian Diaz 91306/8
+//wasd para moverte
 import ddf.minim.*;
 Minim minim;
 AudioPlayer player;
